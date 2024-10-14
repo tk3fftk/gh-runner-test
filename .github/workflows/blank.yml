@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  build: &build-base
     # The type of runner that the job will run on
     runs-on: arc-runner-set
 
@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  build2: *build-base
+  build3: *build-base
+  build4: *build-base
+  build5: *build-base
+  build6: *build-base
+  build7: *build-base
+  build8: *build-base
+  build9: *build-base
+  build10: *build-base
